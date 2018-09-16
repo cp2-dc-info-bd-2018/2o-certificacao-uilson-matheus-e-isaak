@@ -55,16 +55,16 @@ create table navio(
 	);
 
 ALTER TABLE Plataforma
-ADD COLUMN foreign key (engchefe) references engenheiro(id),
+ADD foreign key (engchefe) references engenheiro(id);
 
 ALTER TABLE Plataforma
-ADD COLUMN foreign key (quichefe) references quimico(id)
+ADD foreign key (quichefe) references quimico(id);
 
 ALTER TABLE Refinaria
-ADD COLUMN foreign key (engchefe) references engenheiro(id),
+ADD foreign key (engchefe) references engenheiro(id);
 
 ALTER TABLE Refinaria
-ADD COLUMN foreign key (quichefe) references quimico(id)
+ADD foreign key (quichefe) references quimico(id);
 
 
 
